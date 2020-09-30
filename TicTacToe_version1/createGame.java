@@ -1,7 +1,7 @@
 import java.util.*;
 
 // Driver class for the tic tac toe game
-public class runGame{
+public class createGame{
 
     private static int countX = 0;
     private static int countO = 0;

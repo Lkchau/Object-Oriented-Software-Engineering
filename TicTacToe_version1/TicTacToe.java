@@ -82,8 +82,12 @@ public class TicTacToe{
         diagonal2[0] = board[0][2];
         diagonal2[1] = board[1][1];
         diagonal2[2] = board[2][0];
-        if(allEqualVal(diagonal1) || allEqualVal(diagonal2)){
+        if(allEqualVal(diagonal1)){
             winner = diagonal1[0];
+            return true;
+        }
+        else if(allEqualVal(diagonal2)){
+            winner = diagonal2[0];
             return true;
         }
         
