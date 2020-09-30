@@ -1,4 +1,4 @@
-TIC TAC TOE VERSION 2 README
+#TIC TAC TOE VERSION 2 README
 
 Name: Leo Chau
 Email: lchau@bu.edu
