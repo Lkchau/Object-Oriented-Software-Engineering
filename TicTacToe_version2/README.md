@@ -1,24 +1,27 @@
-#TIC TAC TOE VERSION 2 README
+**TIC TAC TOE VERSION 2 README**
 
 Name: Leo Chau
+
 Email: lchau@bu.edu
+
 BU ID: U48783299
 
-Compilation Instructions:
-Please place all of the files in the same directory and also include the config.properties file in the directory, as that is where the name of the implemented games, rules and all the default hard coded information about the game is stored. Without this, the program will detect that there are no games to be played. (I remembered that we are not supposed to submit files other than the .java files at the last minute and did not leave myself time to make it such that I can get rid of the use of config.properties file and thus I will be including this file with my submission.)
+**Compilation Instructions:**
 
-I personally used intellij when writing this program and thus if opened with an IDE like intellij, one can simply press the "run" button which will start the app. If one were to compile and run through the terminal, then you can use javac *.java in the terminal to compile all the java files (If your javac and java version are different, you may need to change the version of one of them or compile the java files such that they can run on the same version as your java using the following command: javac -source (java version) -target (java version) *.java).
+Please place all of the files in the same directory and also include the **config.properties** file in the directory, as that is where the name of the implemented games, rules and all the default hard coded information about the game is stored. Without this, the program will detect that there are no games to be played.
+
+If one were to compile and run through the terminal, then you can use **javac *.java** in the terminal to compile all the java files (If your javac and java version are different, you may need to change the version of one of them or compile the java files such that they can run on the same version as your java using the following command: **javac -source (java version) -target (java version) *.java**).
 
 
 
-Execution Instructions:
-As noted previously, one may simply use an ide such as intellij to run the program.
+**Execution Instructions:**
+
 However if following the compilation instructions through the terminal, please continue reading this section.
-Once everything is compiled correctly. You may type in the command: "java App". As the main function for the program exists within the App.java file. Doing so will begin the program. Have fun!
+Once everything is compiled correctly. You may type in the command **java App** while in the same directory. As the main function for the program exists within the App.java file. Doing so will begin the program. Have fun!
 
 
 
-Descriptions For Each Class (Alphabetical order):
+**Descriptions For Each Class (Alphabetical order):**
 
 App.java -
 (App class)
@@ -85,14 +88,7 @@ Tile.java -
 A class representing a tile in a board of any board game. 
 
 
-Potential Bonus:
 
-I am not sure exactly what potential bonus points there are however, I will list what I think is bonus.
+**Other Notes:**
 
-- Teams (However for the purpose of Chaos and Order and Tic Tac Toe I limited it to two teams as it would seem weird to have more than or less than 2 and it would be easily extendable to more than 2 players if needed)
-
-
-
-Other Notes:
-
-As mentioned in the compilation instructions, when implementing this program I decided that it would probably be a better idea to have the hardcoded information about the games and rules of each board game stored in an external file and have the program read that file instead of having a string or some data structure within the program to store it to keep that information separate from the program. Which is why I have included a config.properties file which stores the information for a game. To extend the program to other games, one would need to add the game and its ruleset to config.properties, implement a class for the game which will be a subclass of BoardGame and also edit the gameToPlay() method in createGame.java. (There is probably a way to get rid of the last step of changing gameToPlay but that will be a future feature). It is also worth noting that while playing the game as a user, it is annoying to remember the positions of on the board and it maybe be better to implement it such that user can ask for the board positions again so that they do not need to scroll to the beginning, count themselves or remember it.
+When implementing this program I decided that it would probably be a better idea to have the hardcoded information about the games and rules of each board game stored in an external file and have the program read that file instead of having a string or some data structure within the program to store it to keep that information separate from the program. To extend the program to other games, one would need to add the game and its ruleset to config.properties, implement a class for the game which will be a subclass of BoardGame and also edit the gameToPlay() method in createGame.java. (There is probably a way to get rid of the last step of changing gameToPlay but that will be a future feature). It is also worth noting that while playing the game as a user, it is annoying to remember the positions of on the board and it maybe be better to implement it such that user can ask for the board positions again so that they do not need to scroll to the beginning, count themselves or remember it.
