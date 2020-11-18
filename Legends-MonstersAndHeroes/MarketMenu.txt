@@ -1,0 +1,6 @@
+1: Armor
+2: Weapon
+3: Potion
+4: FireSpell
+5: IceSpell
+6: LightningSpell

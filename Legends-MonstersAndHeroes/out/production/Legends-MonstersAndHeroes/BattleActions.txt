@@ -1,0 +1,4 @@
+1: Attack
+2: Equip
+3: Cast Spell
+4: Use potion

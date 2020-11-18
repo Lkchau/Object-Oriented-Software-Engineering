@@ -1,0 +1,2 @@
+1: Start the game immediately
+2: Read basic information for the game
